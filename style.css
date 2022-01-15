@@ -1,9 +1,14 @@
 #sketch-container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: beige;
-    height: 50%;
+    
+    
+    
+    
+}
+#sketch-container>div>div{
+    
+    display: inline-block;
+    border-style: solid;
+    
+    
+    
 }
