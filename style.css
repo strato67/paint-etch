@@ -1,5 +1,5 @@
 
-#sketch-container>div>div{
+.innerDiv{
     
     display: inline-block;
     border-style: solid;
@@ -9,6 +9,10 @@
 }
 #sketch-container{
     max-height: 100vh;
+    white-space: nowrap;
+    text-align: center;
     
-    
+}
+.container>input{
+    width: 50%;
 }
