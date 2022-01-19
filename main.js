@@ -1,7 +1,7 @@
 const sketchDiv = document.querySelector('#sketch-container');
-const gridSize = document.querySelector('#gridSize');
+//const gridSize = document.querySelector('#gridSize');
 const gridVal = document.querySelector('#gridVal');
-
+const colorSelect = document.querySelector('#colorSelect');
 
 const createDiv = (numDivs) =>{
 
@@ -13,23 +13,25 @@ const createDiv = (numDivs) =>{
 
 
     for(let i = 0; i<numDivs; i++){
-        let newDiv = document.createElement('div');
+        const newDiv = document.createElement('div');
         
 
         newDiv.style.width=`${containDimension}px`;
         newDiv.style.height=`${containDimension/numDivs}px`;
         
         for(let j = 0; j<numDivs; j++){
-            let innerDiv = document.createElement('div');
+            const innerDiv = document.createElement('div');
             innerDiv.className = 'innerDiv';
 
-            innerDiv.style.width=`${containDimension/numDivs}px`;  
-            innerDiv.style.height=`${containDimension/numDivs}px`;              
+            const dimensionSet = () =>{
+                innerDiv.style.width=`${containDimension/numDivs}px`;  
+                innerDiv.style.height=`${containDimension/numDivs}px`;     
+            }
+            dimensionSet();
             
             innerDiv.addEventListener('mouseover',()=>{
-                innerDiv.setAttribute('style','background-color:black;');
-                innerDiv.style.width=`${containDimension/numDivs}px`;  
-                innerDiv.style.height=`${containDimension/numDivs}px`; 
+                innerDiv.setAttribute('style',`background-color:${colorSetter().value};`);
+                dimensionSet();
             });
             
             newDiv.appendChild(innerDiv);
@@ -40,10 +42,17 @@ const createDiv = (numDivs) =>{
 
 }
 
+const colorSetter = () =>{
+    let color = document.querySelector('#colorSelect');
+    return color;
+}
+
+
+colorSelect.addEventListener("change", colorSetter);
 
 
 createDiv(16);
-
+colorSetter();
 
         
         
