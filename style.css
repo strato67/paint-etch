@@ -1,18 +1,15 @@
-
+body{
+    background: hsla(11, 82%, 87%, 1);
+    background: linear-gradient(270deg, hsla(11, 82%, 87%, 1) 0%, hsla(299, 85%, 90%, 1) 100%);
+    margin: 0% !important;
+    overflow-x: hidden;
+}
+img{
+    max-width: 3em;
+}
 .innerDiv{
     display: inline-block; 
     margin: 0;
-    
-}
-#sketch-container{
-    height: 600px;
-    width: 600px;
-    white-space: nowrap;
-    border-style: solid;
-    
-}
-#gridSize{
-    width: 50%;
 }
 .sketchParent{
     display: flex;
@@ -20,21 +17,51 @@
     justify-content: center;
 }
 .controlcontainer{
-    margin-right: 2rem;
+    margin-right: 5rem;
     align-self: center;
-    width: 20rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.37);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5%;
+    text-align: center;
+    width: 10%;
 }
-img{
-    max-width: 3em;
+.topHeader{
+    background: rgba(255, 255, 255, 0.096);
+    padding: 1rem 1rem .25em 1rem;
+    margin-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 1%;
 }
 #eraseButton,#resetButton,img{
     max-width: 3em;
 }
-.topHeader{  
-    width: 100%;
-}
 #sketch-container{
     background-color: white;
+}
+#gridSize{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#sketch-container{
+    height: 700px;
+    width: 700px;
+    white-space: nowrap;
+    border-style: solid;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+p{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+#colorSelect{
+    margin-top: 1rem;
 }
