@@ -8,22 +8,21 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='main.js' defer></script>
 </head>
+
 <body>
-    <header><h1>Sketch and Etch</h1></header>
+    <header class="topHeader"><h1>Sketch and Etch</h1></header>
+    <div class="sketchParent">
 
-    <div class="container">
-        <input type="range" min='1' max='64' id='gridSize' value='16' onchange="createDiv(this.value)">
-        <p id="gridVal"></p>
-        <input type="color" id="colorSelect">
-        <button id="eraseButton">Erase</button>
-        <button id="resetButton">Reset</button>
-    </div>
+        <div class="controlcontainer">
+            <p id="gridVal"></p>
+            <input type="range" min='1' max='64' id='gridSize' value='16' onchange="createDiv(this.value)">           
+            <div id="eraseButton" title="Erase"><img src="imgs/erase.png"></div>
+            <div id="resetButton" title="Reset"><img src="imgs/reset.png"></div>
+            <input type="color" id="colorSelect">
+        </div>       
 
-    <div id="sketch-container"></div>
-
-
-
-
-
+        <div id="sketch-container"></div>
+    </div>    
+    
 </body>
 </html>

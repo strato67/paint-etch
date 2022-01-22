@@ -1,9 +1,6 @@
 
 .innerDiv{
-    
-    display: inline-block;
-    
-    
+    display: inline-block; 
     margin: 0;
     
 }
@@ -16,4 +13,28 @@
 }
 #gridSize{
     width: 50%;
+}
+.sketchParent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.controlcontainer{
+    margin-right: 2rem;
+    align-self: center;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    max-width: 3em;
+}
+#eraseButton,#resetButton,img{
+    max-width: 3em;
+}
+.topHeader{  
+    width: 100%;
+}
+#sketch-container{
+    background-color: white;
 }

@@ -9,11 +9,9 @@ const createDiv = (numDivs) =>{
 
     gridVal.innerText=`${numDivs} x ${numDivs} `;
 
-
     for(let i = 0; i<numDivs; i++){
         const newDiv = document.createElement('div');
         
-
         newDiv.style.width=`${containDimension}px`;
         newDiv.style.height=`${containDimension/numDivs}px`;
         
