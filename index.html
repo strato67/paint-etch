@@ -3,9 +3,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Sketch and Etch</title>
+    <title>Paint Etch</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="icon" type="image/x-icon" href="imgs/paintbrush.png">
     <script src='main.js' defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,15 +14,18 @@
 </head>
 
 <body>
-    <div class="topHeader"><h1>Sketch and Etch</h1></div>
+    <div class="topHeader">
+        <h1>Paint Etch</h1>        
+    </div>
 
     <div class="sketchParent">
 
         <div class="controlcontainer">
             <p id="gridVal"></p>
             <input type="range" min='1' max='64' id='gridSize' value='16' onchange="createDiv(this.value)">           
-            <div id="eraseButton" title="Erase"><img src="imgs/erase.png"></div>
-            <div id="resetButton" title="Reset"><img src="imgs/reset.png"></div>
+            <div id="eraseButton" title="Erase"><p><img class ="icon" src="imgs/erase.png">Erase</p></div>
+            <div id="resetButton" title="Reset"><p><img class ="icon" src="imgs/reset.png">Reset</p></div>
+            <div id="randomButton" title="Random Colour"><p><img class = "icon" src="imgs/random.png">Random Colour</p></div>
             <input type="color" id="colorSelect">
         </div>       
 

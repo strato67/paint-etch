@@ -50,5 +50,6 @@ resetButton.addEventListener("click", () => {
     createDiv(document.querySelector("#gridSize").value);
 });
 
-        
+const randomButton = document.querySelector('#randomButton');
+randomButton.addEventListener("click", () => colorSelect.value = `#${Math.floor(Math.random()*16777215).toString(16)}`);
         

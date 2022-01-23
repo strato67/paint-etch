@@ -4,8 +4,14 @@ body{
     margin: 0% !important;
     overflow-x: hidden;
 }
-img{
-    max-width: 3em;
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 900;
+    font-size: 2.5em;
+}
+.icon{
+    width: 1em;
+    padding-right: 1rem;
 }
 .innerDiv{
     display: inline-block; 
@@ -24,7 +30,7 @@ img{
     flex-direction: column;
     background: rgba(255, 255, 255, 0.37);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 5%;
+    border-radius: 2em;
     text-align: center;
     width: 10%;
 }
@@ -34,34 +40,44 @@ img{
     margin-bottom: 3rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 1%;
-}
-#eraseButton,#resetButton,img{
-    max-width: 3em;
-}
-#sketch-container{
-    background-color: white;
+    user-select: none;
 }
 #gridSize{
     width: 100%;
     margin-bottom: 1rem;
 }
 #sketch-container{
+    background-color: white;
     height: 700px;
     width: 700px;
     white-space: nowrap;
     border-style: solid;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-h1{
-    font-family: 'Dosis', sans-serif;
-    font-weight: 900;
-    font-size: 2.5em;
-}
-p{
+#gridVal{
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
+    user-select: none;
 }
 #colorSelect{
-    margin-top: 1rem;
+    margin: 2rem auto 1rem auto;
+    border-radius: .5em;
+    border-color: rgba(255, 255, 255, 0.63);
+    width: 3em;
+    height: 3em;
+}
+#eraseButton,#resetButton,#randomButton{
+    margin: .5rem auto .5rem auto;
+    background: rgba(255, 255, 255, 0.63);
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 1em;
+    user-select: none;
+   
+}
+#eraseButton:hover,#resetButton:hover,#randomButton:hover,#colorSelect:hover{
+    background: rgba(255, 255, 255, 0.788);
 }
